@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_2"
+    tools:context=".IngresosGastos">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="37dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Ingresos_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Introduce tus Ingresos"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Ingresos_btn"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="210dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/acme"
+                    android:onClick="submit"
+                    android:text="Actualizar Ingresos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/transp" />
+
+                <Spinner
+                    android:id="@+id/spinner123"
+                    android:layout_width="211dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="16dp"
+                    android:entries="@array/periodo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ingresos_input" />
+
+                <EditText
+                    android:id="@+id/ele"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto Electricidad"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner123" />
+
+                <EditText
+                    android:id="@+id/agu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto agua"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ele" />
+
+                <EditText
+                    android:id="@+id/comi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto comida"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/agu" />
+
+                <EditText
+                    android:id="@+id/ga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto de Gas"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comi" />
+
+                <EditText
+                    android:id="@+id/deuda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto en deudas"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ga" />
+
+                <EditText
+                    android:id="@+id/transp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/acme"
+                    android:hint="Gasto en Transporte"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/deuda" />
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

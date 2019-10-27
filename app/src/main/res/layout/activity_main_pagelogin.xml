@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".MainPagelogin">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginRight="264dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fragment1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="158dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace"
+        android:onClick="IngresosGastos2"
+        android:text="Añadir Gastos/Ingresos"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragment2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace"
+        android:onClick="consejos_ahorro"
+        android:text="Consejos de Ahorro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ScrollView
+            style="@android:style/Widget.Holo.ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nom_usr"
+                    android:layout_width="308dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/acme"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ahorro_btn"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="151dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:onClick="ahorro"
+                    android:text="Ahorro"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/meta_ahorro" />
+
+                <Button
+                    android:id="@+id/iv_gv_btn"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="162dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="Ingreso/Gasto Variable"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/ahorro_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/meta_ahorro" />
+
+                <TextView
+                    android:id="@+id/meta_ahorro"
+                    android:layout_width="309dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/acme"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.509"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nom_usr" />
+
+                <com.razerdp.widget.animatedpieview.AnimatedPieView
+                    android:id="@+id/animatedpieview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/WHAT1"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <com.razerdp.widget.animatedpieview.AnimatedPieView
+                    android:id="@+id/animatedpieview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/WHAT2"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <TextView
+                    android:id="@+id/electricidad_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/electricidad_tv" />
+
+                <TextView
+                    android:id="@+id/transporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gas" />
+
+                <TextView
+                    android:id="@+id/agua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/transporte" />
+
+                <TextView
+                    android:id="@+id/comida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/agua" />
+
+                <TextView
+                    android:id="@+id/deudas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comida" />
+
+                <TextView
+                    android:id="@+id/transporte123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/animatedpieview"
+                    app:layout_constraintStart_toEndOf="@+id/deudas" />
+
+                <TextView
+                    android:id="@+id/gastos_extra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ingreso_extra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gastos_extra" />
+
+                <Button
+                    android:id="@+id/WHAT1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginLeft="116dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="monospace"
+                    android:text="¿Que es esto?"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/MisGastosMensules_tv" />
+
+                <TextView
+                    android:id="@+id/MisGastosMensules_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="224dp"
+                    android:fontFamily="@font/acme"
+                    android:text="Mis Gastos Mensuales"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/IngresosvsGastos_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/acme"
+                    android:text="Ingresos vs Gastos"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/animatedpieview" />
+
+                <Button
+                    android:id="@+id/WHAT2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="117dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginLeft="116dp"
+                    android:layout_marginTop="12dp"
+                    android:text="¿Que es esto?"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/IngresosvsGastos_tv" />
+
+                <TextView
+                    android:id="@+id/Redes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/acme"
+                    android:text="Siguenos en Facebook como CoinsProyect y en Youtube como CoinsProyectTV"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_width="62dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="24dp"
+                    android:onClick="actualizar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/animatedpieview2"
+                    app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+                <!-- aqui termina el metodo para solo señalar los contenedores -->
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

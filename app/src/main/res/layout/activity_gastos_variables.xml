@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_2"
+    tools:context=".gastos_variables">
+
+    <EditText
+        android:id="@+id/et_gastos"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Ingresa tu Gasto Variable"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_gastos"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/acme"
+        android:onClick="info"
+        android:text="Agregar Gasto Variable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_gastos" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="88dp"
+        android:text="Anuncio:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_nom"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="¿En que gastaste?"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_gastos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

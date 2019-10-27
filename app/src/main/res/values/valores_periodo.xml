@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="periodo">
+        <item>Diario</item>
+        <item>Semanal</item>
+        <item>Quincenal</item>
+    </string-array>
+</resources>

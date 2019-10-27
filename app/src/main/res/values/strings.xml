@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Coins!</string>
+    <string name="title_activity_pagina_principal">PaginaPrincipal</string>
+    <string name="InNombre">Introduce tu Nombre de Usuario</string>
+    <string name="InPsw">Introduce tu Contraseña</string>
+    <string name="Registrarse">PaginaPrincipal</string>
+    <string name="IniciarSesion">PaginaPrincipal</string>
+    <string name="info_latam">La aplicacion perfecta para comenzar a tener una buena salud en las finanzas tanto familiares como personales, en Coins! te ayudaremos a que encuentres el balance perfecto entre gastos e ingresos para que puedes generar, seguir y cumplir tu meta de ahorro!</string>
+    <string name="Beneficios">Tener una meta de ahorro es una cosa imprescindible el día de hoy tanto así que decidimos ayudarte con la tuya con recomendaciones de productos Ahorradores de primera , tips y un pleno seguimiento de la misma, siempre priorizando tener un fondo de ahorro de emergencia para algun imprevisto </string>
+    <string name="bienvenido_a_coins_3"><![CDATA[BIENVENIDO A COINS ]]></string>
+    <string name="Empresas">¿Tienes un producto que ayude a ahorrar que quieras Promocionar?</string>
+
+</resources>

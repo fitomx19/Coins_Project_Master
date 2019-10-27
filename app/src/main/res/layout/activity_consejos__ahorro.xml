@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consejos_Ahorro">
+
+
+    <ImageButton
+        android:id="@+id/luz_btn"
+        android:layout_width="107dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/luz" />
+
+    <ImageButton
+        android:id="@+id/agua_btn"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/soltar" />
+
+    <ImageButton
+        android:id="@+id/gas_btn"
+        android:layout_width="108dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luz_btn"
+        app:srcCompat="@drawable/gas" />
+
+    <ImageButton
+        android:id="@+id/comida_btn"
+        android:layout_width="105dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agua_btn"
+        app:srcCompat="@drawable/comestibles" />
+
+    <ImageButton
+        android:id="@+id/prestamos_btn"
+        android:layout_width="106dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gas_btn"
+        app:srcCompat="@drawable/moneey" />
+
+    <ImageButton
+        android:id="@+id/transporte_btn"
+        android:layout_width="106dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comida_btn"
+        app:srcCompat="@drawable/coche" />
+
+    <TextView
+        android:id="@+id/Titulo_Fake"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/acme"
+        android:text="Consejos Personalizados"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/Titulo_fake2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/acme"
+        android:text="Da click en alguno de los botones para ver más."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Fake"
+        tools:layout_editor_absoluteX="52dp" />
+
+</android.support.constraint.ConstraintLayout>

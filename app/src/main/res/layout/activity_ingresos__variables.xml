@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingresos_Variables">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="92dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="60dp"
+        android:text="Anuncio: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_monto"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Introduce tu Ingreso Variable"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/ing_var"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="276dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
+        android:onClick="submit"
+        android:text="Agregar Ingreso Variable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_monto" />
+
+    <TextView
+        android:id="@+id/tv_idusr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+</android.support.constraint.ConstraintLayout>
